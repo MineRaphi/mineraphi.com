@@ -17,7 +17,7 @@ if ($data === null) {
 file_put_contents('/var/www/mineraphi/webhook.log', print_r($data, true), FILE_APPEND);
 
 // You can also run a shell script or execute Git commands to pull the latest changes:
-exec('cd /var/www/mineraphi && git pull origin main');
+exec('cd /var/www/mineraphi && git pull https://github.com/MineRaphi/mineraphi.com main');
 
 // Respond with success
 http_response_code(200);
