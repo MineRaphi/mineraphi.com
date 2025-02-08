@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>...</title>
+        <link rel="icon" type="image/png" href="../../../image/icon.png">
+
+        <link rel="stylesheet" type="text/css" href="../../../style.css">
+    </head>
+
+    <body>
+        <header class="Head">
+            <nav>
+                <a href="../../index.html"><img class="logo" src="../../../image/main-logo.png" width="250" alt="Das Logo konnte nicht geladen werden..."></a>
+                <ul class="mainnav">
+                    <li>
+                        <button class="navhead">Navigation</button>
+                    </li>
+                    <li> <!--Links zu den info Seiten-->
+                        <div class="dropdown">
+                            <button class="dropbtn">Info</button>
+                            <div class="dropdown-content">
+                                <a href="../../about-us.html">About Us</a>
+                                <a href="../../impressum.html">Impressum</a>
+                                <a>Das Logo ist der Link zur Startseite auf allen Seiten</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li> <!--Links zu den Projekt Seiten-->
+                        <div class="dropdown">
+                            <button class="dropbtn">Projekte</button>
+                            <div class="dropdown-content">
+                                <a href="../../olytros.html">Olytros the Musical</a>
+                                <a href="../../zelda.html">The Legend of Zelda: Maske der Macht</a>
+                                <a href="../index.html">Epic the Musical: German Edition</a>
+                                <a href="../../pokemon.html">Pokémon Origins: Diamond-Pearl</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn">Sprache</button>
+                            <div class="dropdown-content">
+                                <a href="...">Deutsch</a>
+                                <a href="">English</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <table class="info-idx">
+                <tr>
+                    <th colspan="2">...</th>
+                </tr>
+                <tr>
+                    <td colspan="2"><img src="../../../image/epic-charaktere/" class="song-cover-art"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><i>Zeichnung von</i></td>
+                </tr>
+                <tr>
+                    <th colspan="2">Biografie</th>
+                </tr>
+                <tr>
+                    <td>Titel</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Spitznamen</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Beruf</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Zugehörigkeit</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Familie</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Status</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Tod</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th colspan="2">Hinter den Kulissen</th>
+                </tr>
+                <tr>
+                    <td>Auftritte</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Original Stimme</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Deutsche Stimme</td>
+                    <td></td>
+                </tr>
+            </table>
+            <h1>...</h1>
+            <blockquote>... - Name (Song)</blockquote>
+            <h4>
+
+            </h4>
+            <h2>Biografie</h2>
+            <h4 class="backstory">
+                ...
+            </h4>
+            <br>
+            <h2>Trivia</h2>
+            <ul>
+                <li>
+                    
+                </li>
+            </ul>
+            <h2>Auftritte</h2>
+            <ul>
+                <li>
+                    <a href="../sagas/">...</a>
+                    <ul>
+                        <li>
+                            
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <hr>
+        </main>
+        
+        <footer>
+            <h4>Michael Hinterlechner
+                <br>
+                2BHELS 2024/25
+            </h4>
+        </footer>
+    </body>
+</html>
