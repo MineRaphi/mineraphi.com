@@ -1,28 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MineRaphi - QR Code++</title>
-    <link rel="icon" href="/images/logo.png">
-    <link rel="stylesheet" href="/styles.css">
-</head>
-<body>
-<header>
-    <a href="/" class="home"><h1>MineRaphi</h1></a>
-</header>
-<main>
-    <h4 class="back"><a href="../"><- Back to Projects</a></h4>
-    <div class="title">
-        <h1 class="title">
-            <img src="/images/heartpiece.png" alt="Heartpiece Logo" align="center">
-            <span>Heartpiece-Organizer</span>
-        </h1>
-    </div>
-    <ul class="projectList">
-        <li class="github"><a href="https://github.com/MineRaphi/Heartpiece-Organizer" target="_blank">Github Page</a></li><br>
-        <li class="description">The Heartpiece Organizer is a work state manager for the animation studio Heartpiece,<br> using a custom file format to store data.</li>
-    </ul>
-</main>
-</body>
+<html>
+    <head>
+        <script>
+            fetch("/inserts/head.html")
+              .then(response => response.text())
+              .then(data => {
+                document.head.innerHTML = data;
+              })
+              .catch(error => console.error("Error loading head:", error));
+          </script>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    </head>
+    <body>
+        <div id="navbar"></div>
+        <script>
+        fetch("/inserts/navbar.html")
+            .then(response => response.text())
+            .then(data => {
+            document.getElementById("navbar").innerHTML = data;
+            })
+            .catch(error => console.error("Error loading navbar:", error));
+        </script>
+        <h4 class="back"><a href="../"><- Back to Projects</a></h4>
+        <div class="title">
+            <h1 class="title">
+                <img src="/images/heartpieceLogoSmall.png" alt="Heartpiece Logo" align="center">
+                <span>Heartpiece-Organizer</span>
+            </h1>
+        </div>
+        <ul class="projectList">
+            <li class="github"><a href="https://github.com/MineRaphi/Heartpiece-Organizer" target="_blank">Github Page</a></li><br>
+            <li class="description">The Heartpiece Organizer is a work state manager for the animation studio Heartpiece,<br> using a custom file format to store data.</li>
+        </ul>
+    </body>
 </html>
