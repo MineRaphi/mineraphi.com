@@ -1,0 +1,50 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fullscreen Hero Section */
+#hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 101vh; /* Full viewport height */
+  background-color: #0B192C; /* Dark blue background */
+}
+
+/* Title Text Styling */
+.title-text {
+  color: #E0E0E0;
+  font-family: 'Cascadia Code', monospace;
+  text-align: left; /* Left align text */
+  align-self: flex-start; /* Align the text closer to the top */
+  padding-top: 35vh; /* Optional: add some space from the top */
+}
+
+/* Typography */
+h1 {
+  font-size: 5rem;
+  letter-spacing: -0.15rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  opacity: 45%;
+  letter-spacing: -0.05rem;
+  display: flex;
+  align-items: center;
+  gap: 5px; /* Adjust the gap between the icon and the text */
+}
+
+/* Scrollable Projects Section */
+#projects {
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1E293B; /* Slightly lighter blue */
+  color: white;
+  font-size: 2rem;
+}
