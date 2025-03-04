@@ -1,4 +1,6 @@
 window.onload = async function() {
+    document.getElementById("skill_title").innerText = "";
+
     let name = "Raphael Zadny";
     let job = "Student @ HTL-Braunau";
     let location = "Braunau, Austria";
@@ -29,3 +31,23 @@ window.onload = async function() {
         await new Promise(resolve => setTimeout(resolve, 30)); // 95ms delay
     }
 };
+
+let triggered = false; // Ensure it only triggers once
+const triggerPoint = 450; // Adjust this to your desired scroll position
+
+window.addEventListener("scroll", () => {
+    if (!triggered && window.scrollY > triggerPoint) {
+        triggered = true;
+        revealSkill(); // Call your function
+    }
+});
+
+async function revealSkill() {
+    let skillElement = document.getElementById("skill_title");
+    let skill = "Skills and Technologies";
+    skillElement.innerText = "";
+    for (let i = 0; i < skill.length; i++) {
+        skillElement.innerText = skill.substring(0, i + 1);
+        await new Promise(resolve => setTimeout(resolve, 50)); // 95ms delay
+    }
+}
