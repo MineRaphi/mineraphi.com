@@ -5,25 +5,23 @@
   box-sizing: border-box;
 }
 
-/* Fullscreen Hero Section */
 #hero {
   display: flex;
   justify-content: center;
+  text-align: center;
   align-items: center;
-  height: 101vh; /* Full viewport height */
-  background-color: #0B192C; /* Dark blue background */
+  height: 101vh;
+  background-color: #0B192C;
 }
 
 /* Title Text Styling */
 .title-text {
   color: #E0E0E0;
   font-family: 'Cascadia Code', monospace;
-  text-align: left; /* Left align text */
-  align-self: flex-start; /* Align the text closer to the top */
-  padding-top: 35vh; /* Optional: add some space from the top */
+  align-self: flex-start;
+  padding-top: 35vh;
 }
 
-/* Typography */
 #hero h1 {
   font-size: 5rem;
   letter-spacing: -0.15rem;
@@ -35,14 +33,13 @@
   letter-spacing: -0.05rem;
   display: flex;
   align-items: center;
-  gap: 5px; /* Adjust the gap between the icon and the text */
+  gap: 5px;
 }
 
-/* Scrollable Projects Section */
 #skills {
-  height: 300vh; /* Full viewport height */
+  height: 300vh;
   justify-content: center;
-  background-color: #1E293B; /* Slightly lighter blue */
+  background-color: #1E293B;
   color: white;
   font-size: 2rem;
 }
@@ -65,7 +62,7 @@
   color: #E0E0E0;
   font-family: 'Cascadia Code', monospace;
   font-size: 4rem;
-  text-align: left; /* Left align text */
+  text-align: center; /* Left align text */
   align-self: flex-start; /* Align the text closer to the top */
   padding-top: 13vh; /* Optional: add some space from the top */ 
   padding-bottom: 5vh;
@@ -93,4 +90,14 @@
   justify-content: center;
   align-items: center;
   gap: 15px;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  color: white;
+  font-size: 2rem;
 }

@@ -1,5 +1,6 @@
 window.onload = async function() {
     document.getElementById("skill_title").innerText = "";
+    document.getElementById('skillsDiv').style.opacity = '0';
 
     let name = "Raphael Zadny";
     let job = "Student @ HTL-Braunau";
@@ -45,9 +46,11 @@ window.addEventListener("scroll", () => {
 async function revealSkill() {
     let skillElement = document.getElementById("skill_title");
     let skill = "Skills and Technologies";
+    let opacity = 0
     skillElement.innerText = "";
     for (let i = 0; i < skill.length; i++) {
         skillElement.innerText = skill.substring(0, i + 1);
+        document.getElementById('skillsDiv').style.opacity = String(opacity+=0.07);
         await new Promise(resolve => setTimeout(resolve, 50)); // 95ms delay
     }
 }
