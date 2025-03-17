@@ -99,6 +99,7 @@ img
     padding-left: 50px;
     padding-top: 10px;
     padding-bottom: 15px;
+    width: 400px;
 }
 
 .projects
@@ -285,4 +286,27 @@ hr
     background-color: #FF8C42;
     border: 5px solid #F24333;
     font-size: large;
+}
+
+.team-list
+{
+    background-color: #FF8C42;
+    border: solid, #261447, 3px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-self: center;
+}
+
+.team-list td
+{
+    background-color: #FF8C42;
+    max-width: 400px;
+    min-width: 200px;
+    padding: 5px;
+}
+
+.team-list th
+{
+    background-color: #F24333;
+    padding: 5px;
 }
