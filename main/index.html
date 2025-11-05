@@ -1,28 +1,13 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <script>
-            fetch("/inserts/head.html")
-              .then(response => response.text())
-              .then(data => {
-                document.head.innerHTML = data;
-              })
-              .catch(error => console.error("Error loading head:", error));
-          </script>
-          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-          <meta http-equiv="refresh" content="0; url=/projects/">
-          <title>Redirecting...</title>
+        <title>MineRaphi</title>
     </head>
+
     <body>
-        <div id="navbar"></div>
-        <script>
-        fetch("/inserts/navbar.html")
-            .then(response => response.text())
-            .then(data => {
-            document.getElementById("navbar").innerHTML = data;
-            })
-            .catch(error => console.error("Error loading navbar:", error));
-        </script>
-        <p>You are being redirected. If not, <a href="/projects/">click here</a>.</p>
+        <div>
+            <h1>Welcome to my website :) .</h1>
+            <h3>The site is currently a work in progress</h3>
+        </div>
     </body>
 </html>
