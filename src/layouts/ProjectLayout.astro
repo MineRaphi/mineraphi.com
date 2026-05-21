@@ -1,6 +1,7 @@
 ---
+import backButton from "../assets/back-button.svg";
 const { frontmatter } = Astro.props;
-const title = frontmatter.title
+const title = frontmatter.title;
 ---
 <!doctype html>
 <html lang="en">
@@ -14,8 +15,14 @@ const title = frontmatter.title
     </head>
     <body>
         <div id="content">
+            <a id="backButton" href="/projects">
+                <img src={backButton.src} width="25px">
+            </a>
             <h1 id="title">{title}</h1>
             <hr>
+            <section id="links">
+                <a href={frontmatter.github} target="_blank">Github →</a>
+            </section>
             <slot />
         </div>
     </body>
@@ -30,12 +37,28 @@ const title = frontmatter.title
         display: flex;
         justify-content: center;
         font-family: Arial, Helvetica, sans-serif;
+        background-color: #161616;
+        color: #d9d9d9;
     }
 
     h1 {
         font-size: 2.5rem;
         margin-top: 5px;
         margin-bottom: 0px;
+    }
+
+    p {
+        font-size: 1.1rem;
+        margin-top: 4rem;
+    }
+
+    #backButton {
+        display: block;
+        position: absolute;
+    }
+
+    #backButton img {
+        filter: invert(100%)
     }
 
     #content {
@@ -45,6 +68,11 @@ const title = frontmatter.title
 
     #title {
         font-size: 3.5rem;
+    }
+
+    #links a {
+        color: #d9d9d9;
+        font-size: 1.05rem;
     }
 </style>
 
