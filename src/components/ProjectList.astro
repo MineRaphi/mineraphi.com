@@ -1,0 +1,70 @@
+---
+import logo from "../assets/logos/MineRaphi-onB.svg";
+const projectFiles = import.meta.glob('../pages/projects/*.md', { eager: true });
+const projects = Object.values(projectFiles) as any[];
+---
+
+<div id="container">
+    <main>
+        <div id="backgroundColor" />
+        <section id="hero">
+            <a href="/"><img src={logo.src} width="500" alt="MineRaphi" /></a>
+
+            <div class="grid">
+                {projects.map((project) => (
+                    <a href={project.url}>
+                        <div class="card">
+                            <h3>{project.frontmatter.title}</h3>
+                            <p>{project.frontmatter.description}</p>
+                        </div>
+                    </a>
+                ))}
+            </div>
+        </section>
+    </main>
+</div>
+
+<style>
+    #backgroundColor {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -2;
+        background-color: #161616;
+    }
+
+    #hero {
+        margin-top: 20px;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+
+    .card {
+        background-color: #f6f6f6;
+        border-radius: 20px;
+        padding: 10px;
+        font-size: 30px;
+        text-align: center;
+        width: 25rem;
+        margin: 15px;
+        color: black
+    }
+
+    .card h3 {
+        margin: 15px;
+    }
+
+    .card p {
+        margin: 5px;
+        margin-top: 20px;
+    }
+
+    .grid a {
+        text-decoration: none;
+    }
+</style>
