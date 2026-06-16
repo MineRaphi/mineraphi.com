@@ -2,6 +2,7 @@
 import backButton from "../assets/back-button.svg";
 const { frontmatter } = Astro.props;
 const title = frontmatter.title;
+const links = frontmatter.links
 ---
 <!doctype html>
 <html lang="en">
@@ -22,6 +23,9 @@ const title = frontmatter.title;
             <hr>
             <section id="links">
                 <a href={frontmatter.github} target="_blank">Github →</a>
+                {links && links.map((link: { label: string, url: string}) => (
+                    <a href={link.url} target="_blank">{link.label} →</a>
+                ))}
             </section>
             <slot />
         </div>
@@ -84,6 +88,12 @@ const title = frontmatter.title;
 
     #title {
         font-size: 3.5rem;
+    }
+
+    #links {
+        display: flex;
+        justify-content: center;
+        gap: 0.7rem;
     }
 
     #links a {
