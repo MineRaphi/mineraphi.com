@@ -6,6 +6,7 @@ import background from "../assets/background.svg";
 <div id="container">
     <div id="backgroundColor" />
     <img id="background" src={background.src} alt="" fetchpriority="high" />
+    <a id="impressum-link" href="/impressum">Impressum</a>
     <main>
         <section id="hero">
             <img src={logo.src} width="500" alt="MineRaphi" />
@@ -121,5 +122,13 @@ import background from "../assets/background.svg";
         line-height: 24px;
         letter-spacing: -0.006em;
         margin: 0;
+    }
+
+    #impressum-link {
+        position: fixed;
+        right: 15px;
+        top: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #d9d9d9;
     }
 </style>

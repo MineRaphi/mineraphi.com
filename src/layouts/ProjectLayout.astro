@@ -1,4 +1,5 @@
 ---
+import Footer from "../components/footer.astro";
 import backButton from "../assets/back-button.svg";
 const { frontmatter } = Astro.props;
 const title = frontmatter.title;
@@ -28,6 +29,7 @@ const links = frontmatter.links
                 ))}
             </section>
             <slot />
+            <Footer />
         </div>
     </body>
 </html>
@@ -83,7 +85,7 @@ const links = frontmatter.links
         margin-top: 25px;
         margin: 25rem;
         margin-top: 0;
-        margin-bottom: 150px;
+        margin-bottom: 0px;
     }
 
     #title {
